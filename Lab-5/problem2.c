@@ -24,7 +24,7 @@ int main() {
     int score;
     while (1) {
         printf("Enter 0 or 1 to STOP.\nEnter the NFL score: ");
-        scanf("%d", &score)
+        scanf("%d", &score);
         if (score <= 1){
             break;
         }
