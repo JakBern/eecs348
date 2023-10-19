@@ -25,7 +25,7 @@ class Matrix {
   Matrix operator+(const Matrix &other);
   Matrix operator-(const Matrix &other);
 
-  static Matrix Matmul(Matrix left, Matrix right);
+  static Matrix Matmul(const Matrix &left, const Matrix &right);
 
 };
 

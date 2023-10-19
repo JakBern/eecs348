@@ -89,7 +89,7 @@ Matrix Matrix::operator-(const Matrix &other) {
   return diff;
 };
 
-Matrix Matrix::Matmul(Matrix left, Matrix right) {
+Matrix Matrix::Matmul(const Matrix &left, const Matrix &right) {
   std::size_t size = left.size();
   if (size != right.size()) {
     throw std::runtime_error("Matrix sizes not equal during multiplication");
