@@ -6,8 +6,10 @@
 
 #include "matrix.h"
 
+const int kMatrixMaxSize = 100;
+
 Matrix::Matrix(std::size_t size) {
-  if (size > 100) {
+  if (size > kMatrixMaxSize) {
     throw std::runtime_error("Matrix size > 100");
   }
   size_ = size;
