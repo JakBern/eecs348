@@ -67,8 +67,8 @@ void InitFromStream(std::vector<std::vector<int>> &a,
                     std::fstream& file_stream,
                     std::size_t size) {
 
-  for (int i = 0; i < size; i++) {
-    for (int j = 0; j < size; j++) {
+  for (std::size_t i = 0; i < size; i++) {
+    for (std::size_t j = 0; j < size; j++) {
       file_stream >> a[i][j];
 
       if (file_stream.peek() == EOF && i != size - 1
@@ -82,8 +82,8 @@ void InitFromStream(std::vector<std::vector<int>> &a,
 
 void PrintMatrix(std::vector<std::vector<int>> arr) {
   std::size_t size = arr.size();
-  for (int i = 0; i < size; i++) {
-    for (int j = 0; j < size; j++) {
+  for (std::size_t i = 0; i < size; i++) {
+    for (std::size_t j = 0; j < size; j++) {
 
       std::cout << std::setw(3) << arr[i][j];
       if (j == size - 1) {
@@ -105,8 +105,8 @@ std::vector<std::vector<int>> MatAdd(
   std::size_t size = first.size();
   std::vector<std::vector<int>> sum(first.size(), 
                                 std::vector<int>(first.size(), 0));
-  for (int i = 0; i < size; i++) {
-    for (int j = 0; j < size; j++) {
+  for (std::size_t i = 0; i < size; i++) {
+    for (std::size_t j = 0; j < size; j++) {
       sum[i][j] = first[i][j] + second[i][j];
     }
   }
@@ -122,8 +122,8 @@ std::vector<std::vector<int>> MatDiff(
   std::size_t size = first.size();
   std::vector<std::vector<int>> diff(first.size(), 
                                 std::vector<int>(first.size(), 0));
-  for (int i = 0; i < size; i++) {
-    for (int j = 0; j < size; j++) {
+  for (std::size_t i = 0; i < size; i++) {
+    for (std::size_t j = 0; j < size; j++) {
       diff[i][j] = first[i][j] - second[i][j];
     }
   }
@@ -142,7 +142,7 @@ std::vector<std::vector<int>> MatMul(
   for (std::size_t col = 0; col < size; col++) {
     for (std::size_t row = 0; row < size; row++) {
       int sum = 0;
-      for (int i = 0; i < size; i++) {
+      for (std::size_t i = 0; i < size; i++) {
         sum += left[row][i] * right[i][col];
       }
       product[row][col] = sum;
