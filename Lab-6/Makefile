@@ -1,2 +1,2 @@
-matrixmult: main.cpp matrix.cpp
-	g++ -o main main.cpp matrix.cpp
+matrix: main.cpp
+	g++ -o main main.cpp
