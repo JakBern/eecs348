@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>
+HTML Practice 2
+</title>
+<link rel="stylesheet" href="practice2_style.css">
+</head>
+
+<script src="practice2_script.js"></script>
+
+
+<body>
+<p>
+Enter RGB values here to change the text background color below:
+</p>
+
+<label for="redbg">Red (0-255):</label>
+<input type="number" id="redbg"  name="red" min="0" max="255" value="255">
+<label for="greenbg">Green (0-255):</label>
+<input type="number" id="greenbg" name="green" min="0" max="255" value="0">
+<label for="bluebg">Blue (0-255):</label>
+<input type="number" id="bluebg" name="blue" min="0" max="255" value="0">
+
+<p>
+Enter RGB values here to change the border color below:
+</p>
+<label for="redborder">Red (0-255):</label>
+<input type="number" id="redborder"  name="red" min="0" max="255" value="0">
+<label for="greenborder">Green (0-255):</label>
+<input type="number" id="greenborder" name="green" min="0" max="255" value="255">
+<label for="blueborder">Blue (0-255):</label>
+<input type="number" id="blueborder" name="blue" min="0" max="255" value="0">
+
+<p>
+Enter a value to control the border width below:
+</p>
+<label for="borderwidth">Width (0-100):</label>
+<input type="number" id="borderwidth"  name="borderwidth" min="0" max="100" value="4">
+<p>
+<button type="button" onclick="updateColors()">Click to update text</button>
+</p>
+<p>
+Example text:
+</p>
+<p>
+<div id="example" class="vary">
+Web Developer's Anthem (to the tune of <a href="https://www.youtube.com/watch?v=DcJFdCmN98s">"Oh My Dayum"</a>)
+</p>
+<p>
+This is how browsing is supposed to be, <br>
+the pages load responsively. <br>
+The tabs up in here ain't using RAM <br>
+I wish you could browse how I'm browsing. <br>
+You click the link, the link clicks back, my man. <br>
+</div>
+</p>
+</body>
+</html>

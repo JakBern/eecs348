@@ -1,0 +1,36 @@
+body {
+  background-image: url("Ford_Racing_3_PS2.jpg")
+}
+@keyframes title-anim {
+  0% {color: lime; text-shadow: 0 0 2px black, 0 0 3px black, 0 0 4px black, 0 0 5px whitesmoke;}
+  100% {color: black; text-shadow: 0 0 2px lime, 0 0 3px lime, 0 0 4px lime, 0 0 5px whitesmoke;}
+}
+
+@keyframes rave-anim {
+  0% {color: cyan; text-shadow: 0 0 2px black, 0 0 3px black, 0 0 4px black, 0 0 5px whitesmoke;}
+  100% {color: black; text-shadow: 0 0 2px cyan, 0 0 3px cyan, 0 0 4px cyan, 0 0 5px whitesmoke;}
+}
+
+h1 {
+  text-align: center;
+  animation-name: title-anim;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+h2 {
+  text-align: center;
+  color:rgb(248, 8, 8);
+  text-shadow: 0 0 2px black, 0 0 3px black, 0 0 4px black, 0 0 5px whitesmoke;
+}
+p {
+  text-align: center;
+  color:rgb(255, 14, 14);
+  text-shadow: 0 0 1px black, 0 0 2px black, 0 0 3px black, 0 0 4px black, 0 0 5px whitesmoke;
+}
+.rave {
+  font-size: large;
+  animation-name: rave-anim;
+  animation-duration: 100ms;
+  animation-iteration-count: infinite;
+}
